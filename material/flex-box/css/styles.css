@@ -1,0 +1,11 @@
+.container {
+  border: 5px solid blue;
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  background-color: rebeccapurple;
+  padding: 100px;
+  display: inline-block;
+  border: 5px solid black;
+}

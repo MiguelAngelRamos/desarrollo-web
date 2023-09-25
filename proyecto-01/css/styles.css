@@ -1,0 +1,56 @@
+/* Estilos generales para el cuerpo del documento*/
+body {
+  font-family: 'Montserrat', sans-serif; /* Define la fuente del texto*/
+  margin: 0; /* Elimina los márgenes por defecto */
+  padding: 0;/* Elimina el padding por defecto */
+  min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana del navegador*/
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 10px 0px 10px 0px; /*top, right, bottom, left*/
+  text-align: center; /*Centra de manera horizontal*/
+  position: fixed; /*Hace el nav quede fijo top, left, right y bottom*/
+  top: 0; /*Alinea el navbar con la parte superior de la página*/
+  left: 0;/* Alinea el navbar con el lado izquierdo de la página*/
+  width: 100%;/* Asegura que el navbar ocupe todo el ancho de la página*/
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0px 15px 0px 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.producto {
+  border: 3px solid #ccc;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
