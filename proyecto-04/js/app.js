@@ -1,15 +1,25 @@
-/*
-* Arrays y sus métodos "map()"
-* EL método map(), crea un nuevo array y el array resultante tiene una modificación por cada uno de sus elementos.
- */
+//* Inicio de las peticiones hacia el API DE RICK AND MORTY
+//* en "results" estan los personajes
+// * 300ms promedio, es decir se toma su tiempo
 
-const numeros = [10, 20, 30, 40];
-//* indices      0 ,  1,  2, 3
-console.log(numeros[0]); //* imprimir 10
-console.log(numeros[1]); //* imprimir 20
-console.log(numeros[2]); //* imprimir 30
-console.log(numeros[3]); //* imprimir 40
+const getApiRickAndMortyFull = async () => {
+  const response = await fetch("https://rickandmortyapi.com/api/character");
+  const data = await response.json();
+  return data; // {} completo de la respuesta 
+};
 
-//* La longitud de array es
+// async function getApiRickAndMortyFull() {
+//   const response = await fetch("https://rickandmortyapi.com/api/character");
+//   const data = await response.json();
+//   return data; // {} completo de la respuesta 
+// }
 
-console.log(numeros.length);
+//* necesitamos una función que me devuelva los resultados
+const init = async () => {
+  const apiRickAndMortyFull = await getApiRickAndMortyFull();
+  const getCharacters = apiRickAndMortyFull.results;
+  console.log(getCharacters);
+};
+
+//* llamo a la función
+init();
