@@ -1,3 +1,5 @@
+const rowCards = document.querySelector('#row-cards');
+
 //* Inicio de las peticiones hacia el API DE RICK AND MORTY
 //* en "results" estan los personajes
 //* 300ms promedio, es decir se toma su tiempo
@@ -21,3 +23,16 @@ const init = async () => {
 
 //* llamo a la función
 init();
+
+//* Vamos a crear la tarjeta (card)
+
+const cardCharacter = character => {
+
+  //* crear los elementos html
+  const cardBootstrap = document.createElement('div'); //* <div></div>
+  const imgCard = document.createElement('img'); //* <img/>
+  const cardBody = document.createElement('div'); //* <div></div>
+  const titleCharacter = document.createElement('h5');
+
+
+};
