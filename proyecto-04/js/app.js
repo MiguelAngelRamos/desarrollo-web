@@ -28,7 +28,6 @@ init();
 
 //* Vamos a crear la tarjeta (card)
 const cardCharacter = character => {
-
   //* crear los elementos html
   const cardBootstrap = document.createElement('div'); //* <div></div>
   const imgCard = document.createElement('img'); //* <img src="..." />
