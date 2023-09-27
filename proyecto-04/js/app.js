@@ -47,5 +47,5 @@ const cardCharacter = character => {
 const generatorCreateCards = (characters) => {
   console.log(characters);
   //* map
-  characters.map(character => ardCharacter(character));
+  characters.map(character => cardCharacter(character));
 }
