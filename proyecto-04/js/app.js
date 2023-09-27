@@ -32,7 +32,9 @@ const cardCharacter = character => {
   const cardBootstrap = document.createElement('div'); //* <div></div>
   const imgCard = document.createElement('img'); //* <img/>
   const cardBody = document.createElement('div'); //* <div></div>
-  const titleCharacter = document.createElement('h5');
+  const titleCharacter = document.createElement('h5'); //* 
+  const btnByIdCharacter = document.createElement('a'); //* <a></a>
 
+  
 
 };
