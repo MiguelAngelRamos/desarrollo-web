@@ -5,7 +5,7 @@ const rowCards = document.querySelector('#row-cards');
 const getApiRickAndMortyFull = async () => {
   const response = await fetch("https://rickandmortyapi.com/api/character");
   const data = await response.json();
-  return data; //* {} completo de la respuesta 
+  return data; //* {} el objeto result completo de la respuesta 
 };
 // async function getApiRickAndMortyFull() {
 //   const response = await fetch("https://rickandmortyapi.com/api/character");
