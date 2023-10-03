@@ -96,6 +96,7 @@ body {
   padding: 20px 0;
   overflow-x: hidden;
   margin-top: 85px;
+  border-radius: 20px;
 }
 
 .carousel {
@@ -105,13 +106,14 @@ body {
   position: relative;
   margin: auto;
   background: #000;
+  border-radius: 15px;
 }
 .slider {
   flex: 0 0 auto;  /* Define el crecimiento, la disminución y la base del flex del slider a 0, 0 y automático, respectivamente */
   margin-right: 30px;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+  border-radius: 15px;
   width: 100%;
   height: 450px;
   left: 0;
@@ -151,3 +153,7 @@ body {
   text-justify: inter-word;
   width: 80%;
 }
+
+/*
+* 
+*/
