@@ -89,3 +89,65 @@ body {
   font-weight: 700;
   text-decoration: none;
 }
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  overflow-x: hidden;
+  margin-top: 85px;
+}
+
+.carousel {
+  display: flex;
+  width: 92%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+  background: #000;
+}
+.slider {
+  flex: 0 0 auto;  /* Define el crecimiento, la disminución y la base del flex del slider a 0, 0 y automático, respectivamente */
+  margin-right: 30px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  height: 450px;
+  left: 0;
+  transition: 1s;
+  overflow: hidden; /* oculta el contenido que se desborda del slider*/
+}
+
+.slider img {
+  width: 70%;
+  min-height: 100%;
+  object-fit: cover; /* hace la imagen cubra completamente el espacio del slider y se recorta si es necesario*/
+  display: block;
+  margin-left: auto;
+}
+
+.slider-content {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(to right, #030b17 80%, #0c111b00);
+  color: #fff;
+}
+
+.movie-title {
+  padding-left: 50px;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.movie-des {
+  line-height: 30px;
+  margin-top: 30px;
+  opacity: 0.8;
+  padding-left: 50px;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 80%;
+}
