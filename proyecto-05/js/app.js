@@ -12,3 +12,6 @@ const getMoviePopular = async () => {
 
 
 getMoviePopular();
+
+
+const videoCards  = [...document.querySelector('.video-card')];
