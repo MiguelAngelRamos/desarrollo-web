@@ -186,6 +186,41 @@ body {
 .video-card:hover .video-card-image {
   display: none;
 }
+
+.title {
+  color: #fff;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.movie-list {
+  position: relative;
+  width: 92%;
+  margin: auto;
+  height: 10vw;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.card-container {
+
+}
+
+.card {
+  position: relative;
+  min-width: 150px;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  transition: .5s;
+  background: #000;
+}
 /*
 * 
 */

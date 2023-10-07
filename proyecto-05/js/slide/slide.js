@@ -33,7 +33,7 @@ export const createSlide = (movies) => {
  carousel.appendChild(slider);
 
  slideIndex++; //* slideIndex = slideIndex + 1;
- console.log('El contador es: ' + slideIndex);
+//  console.log('El contador es: ' + slideIndex);
  sliders.push(slider);
 
  //* Adding sliding effect
@@ -42,7 +42,7 @@ export const createSlide = (movies) => {
   // console.log(sliders);
   // sliders[0].style.marginLeft = '100px';
   sliders[0].style.marginLeft = `calc(-${100 * (sliders.length - 2)}% - ${30 * (sliders.length -2)}px)`;
-  console.log(`calc(-${100 * (sliders.length - 2)}% - ${30 * (sliders.length -2)}px)`);
+  // console.log(`calc(-${100 * (sliders.length - 2)}% - ${30 * (sliders.length -2)}px)`);
  }
 
 };
